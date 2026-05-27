@@ -37,3 +37,52 @@ The primary users for version 1 of the tool are:
    - Identify channels that require attention
 
 Clients are intentionally excluded from v1 access to keep the system focused internally while workflows and reporting standards are validated.
+
+## Core Features (Version 1)
+
+The first version of the tool will focus on solving the most common reporting and performance visibility problems faced by internal marketing teams.
+
+Core features include:
+
+- Unified campaign performance dashboard
+- Multi-channel metrics overview
+- Date range filtering
+- KPI summaries (CTR, conversions, spend, impressions)
+- Performance highlights and recommendations
+- Exportable summary reports
+
+The focus of v1 is simplicity, consistency, and usability rather than feature completeness.
+
+## Data Sources
+
+The tool will integrate with existing marketing platforms currently used by the team.
+
+Potential data sources include:
+- Google Ads
+- Meta Ads
+- Google Analytics
+- LinkedIn Campaign Manager
+
+Since the company does not want to change its existing workflows or tools, the system will act as a centralized reporting layer on top of the current ecosystem rather than replacing any platform.
+
+## Out of Scope (Version 1)
+
+The following features are intentionally excluded from the first release:
+
+- Real-time analytics
+- AI-generated forecasting
+- Campaign editing and management
+- Automated ad budget optimization
+- Client-facing dashboards
+- Machine learning recommendation systems
+
+These features were excluded to keep the initial version focused, faster to implement, and easier to validate with internal users before expanding functionality.
+
+## User Flow
+
+1. User logs into the dashboard
+2. User selects client or campaign
+3. User chooses date range
+4. System fetches campaign performance data
+5. Dashboard displays metrics and insights
+6. User exports or shares summary report
