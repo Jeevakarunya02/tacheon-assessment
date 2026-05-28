@@ -68,3 +68,17 @@ Table:
 ## Sample Analysis
 
 The SQL query filters days where temperature exceeds 35°C and sorts results by temperature.
+
+## Production Considerations
+
+### Scheduling
+
+The pipeline can be scheduled using cron jobs, Apache Airflow, or Google Cloud Scheduler to run automatically at fixed intervals.
+
+### Failure Monitoring
+
+Logging and alerting tools such as Cloud Logging or email notifications can be used to detect API failures, schema issues, or BigQuery loading failures.
+
+### Scaling Improvements
+
+If data volume increases significantly, the pipeline could be improved using batch processing, partitioned BigQuery tables, and orchestration tools like Airflow or Prefect.
