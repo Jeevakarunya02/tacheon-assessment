@@ -1,6 +1,7 @@
 import requests
 import logging
 from transform import transform_weather_data
+from load_bigquery import load_to_bigquery
 
 logging.basicConfig(level=logging.INFO)
 
@@ -26,6 +27,8 @@ try:
     df = transform_weather_data(data)
 
     print(df)
+
+    load_to_bigquery(df)
 
 except requests.exceptions.RequestException as e:
     logging.error(f"API request failed: {e}")
